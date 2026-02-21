@@ -8,12 +8,20 @@
 <body>
     <h1>Workshop 2</h1>
     <h2>Exercise 4</h2>
+    <div id="studentContent"></div>
     <script>
+            function welcomeStudent() {
+                document.getElementById("studentContent").innerHTML = "Welcome student!";
+            }
+            function notStudent() {
+                document.getElementById("studentContent").innerHTML = "Sorry, this page is for students only.";
+            }
+
         if (confirm("Are you a student?")) {
-            document.write("Welcome student!");
+            welcomeStudent();
 
         } else {
-            document.write("Sorry, this page is for students only.");
+            notStudent();
         };
     </script>
 </body>
